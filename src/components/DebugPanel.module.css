@@ -1,0 +1,94 @@
+.debugCard {
+  padding: 1.5rem;
+  background-color: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-xl);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.titleArea {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-rose);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.descText {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.patchCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  borderRadius: 12px;
+  background-color: rgba(30, 41, 59, 0.2);
+  min-width: 320px;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.patchTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+.patchImages {
+  display: flex;
+  gap: 1rem;
+}
+
+.patchImageCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.patchImageLabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.previewImg {
+  width: 140px;
+  height: 140px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  background-color: #000;
+}
+
+.emptyState {
+  width: 100%;
+  height: 150px;
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}

@@ -1,0 +1,184 @@
+.historyCardWrapper {
+  padding: 1.5rem;
+  background-color: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-xl);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.historyTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: white;
+}
+
+.historyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.historyCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: rgba(30, 41, 59, 0.25);
+  border: 1px solid var(--border-color);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.historyCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(244, 63, 94, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.thumbContainer {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* 4:3 Aspect Ratio */
+  overflow: hidden;
+  background-color: #000;
+}
+
+.thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 23, 42, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.historyCard:hover .cardOverlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cardFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: stretch;
+  padding: 0.5rem;
+  background-color: rgba(15, 23, 42, 0.4);
+  border-top: 1px solid var(--border-color);
+}
+
+.cardHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.cardLabel {
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.cardTime {
+  color: var(--text-muted);
+  font-size: 0.6rem;
+}
+
+.paramsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.65rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+}
+
+.paramRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paramValue {
+  font-weight: 600;
+}
+
+.paramValueHighlight {
+  font-weight: 600;
+  color: var(--color-rose);
+}
+
+.inferenceTimeRow {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 0.2rem;
+  margin-top: 0.1rem;
+}
+
+.inferenceTimeValue {
+  font-weight: 700;
+  color: var(--color-rose);
+}
+
+.actionRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+
+.actionsGroup {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.actionBtn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease;
+}
+
+.actionBtn:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.actionBtnDelete:hover {
+  color: var(--color-rose);
+  background-color: rgba(244, 63, 94, 0.1);
+}

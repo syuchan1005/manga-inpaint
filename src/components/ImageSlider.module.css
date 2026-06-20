@@ -1,0 +1,92 @@
+.sliderWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.labelsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0 0.25rem;
+  box-sizing: border-box;
+}
+
+.labelLeft {
+  background-color: rgba(3, 7, 18, 0.85);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: var(--text-secondary);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  user-select: none;
+}
+
+.labelRight {
+  background: linear-gradient(135deg, var(--color-rose) 0%, #ec4899 100%);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(244, 63, 94, 0.2);
+  pointer-events: none;
+  user-select: none;
+}
+
+.canvasArea {
+  position: relative;
+  max-width: 100%;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: #000;
+  border: 1px solid var(--border-color);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: white;
+  z-index: 30;
+  cursor: ew-resize;
+}
+
+.handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  background-color: white;
+  border: 2px solid var(--color-rose);
+  color: var(--color-rose);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  cursor: ew-resize;
+  transition: transform 0.1s ease;
+}
+
+.handle:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.handle:active {
+  transform: translate(-50%, -50%) scale(0.9);
+}

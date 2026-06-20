@@ -1,0 +1,345 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.75rem;
+}
+
+.titleArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.titleLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.titleBadges {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.compactBadge {
+  font-size: 0.6rem !important;
+  padding: 0.1rem 0.4rem !important;
+}
+
+.latencyBadge {
+  font-size: 0.6rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  background-color: rgba(244, 63, 94, 0.1);
+  color: var(--color-rose);
+  border: 1px solid rgba(244, 63, 94, 0.2);
+}
+
+.toggleButton {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  outline: none;
+}
+
+.toggleButton:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.compactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background-color: rgba(30, 41, 59, 0.2);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-color);
+  width: 100%;
+}
+
+.compactRow {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.compactCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+  min-width: 120px;
+}
+
+.compactLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.compactSelectedValue {
+  color: var(--color-rose);
+  font-weight: 700;
+}
+
+.compactOptionsGrid {
+  display: flex;
+  gap: 0.35rem;
+  width: 100%;
+}
+
+.compactOptionsWrapGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  width: 100%;
+}
+
+.compactOptionButton {
+  flex: 1;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background-color: rgba(255, 255, 255, 0.02);
+  color: var(--text-secondary);
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.compactOptionButton:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+
+.compactOptionButtonActive {
+  border-color: var(--color-rose) !important;
+  background-color: rgba(244, 63, 94, 0.12) !important;
+  color: white !important;
+}
+
+.compactResButton {
+  flex: 1 1 calc(16.666% - 0.35rem);
+  min-width: 4.5rem;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background-color: rgba(255, 255, 255, 0.02);
+  color: var(--text-secondary);
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.compactResButton:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+
+.titleText {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.infoCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgba(30, 41, 59, 0.2);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-color);
+  align-items: center;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  flex: 1;
+  min-width: 12rem;
+}
+
+.modelName {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: white;
+}
+
+.modelDetails {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.badge {
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.65rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+}
+
+.badgeLoading {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.badgeLoaded {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--color-emerald);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.backendBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  font-weight: 700;
+}
+
+.backendWebgpu {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--color-emerald);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.backendWasm {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.controlSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1rem;
+  background-color: rgba(30, 41, 59, 0.2);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-color);
+}
+
+.controlHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionTitle {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: white;
+}
+
+.sectionValue {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-rose);
+}
+
+.sectionDesc {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.optionsGrid {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.optionsWrapGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.optionButton {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background-color: rgba(255, 255, 255, 0.02);
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.optionButtonActive {
+  border-color: var(--color-rose);
+  background-color: rgba(244, 63, 94, 0.12);
+  color: white;
+}
+
+.optionTitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.optionDesc {
+  font-size: 0.6rem;
+  opacity: 0.65;
+  font-weight: 500;
+}
+
+.resButton {
+  flex: 1 1 calc(33.333% - 0.5rem);
+  min-width: 7.5rem;
+}
+
+.infoBanner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background-color: rgba(15, 23, 42, 0.4);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.highlightText {
+  color: var(--color-rose);
+  font-weight: 700;
+  font-size: 0.85rem;
+}

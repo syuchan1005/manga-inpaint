@@ -1,0 +1,62 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btnPrimary {
+  background: linear-gradient(135deg, var(--color-rose) 0%, #ec4899 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(244, 63, 94, 0.25);
+}
+
+.btnPrimary:hover {
+  background: linear-gradient(135deg, var(--color-rose-hover) 0%, #db2777 100%);
+  box-shadow: 0 6px 16px rgba(244, 63, 94, 0.35);
+}
+
+.btnPrimary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btnSecondary {
+  background-color: var(--color-slate);
+  border-color: rgba(51, 65, 85, 0.6);
+  color: var(--text-primary);
+}
+
+.btnSecondary:hover {
+  background-color: var(--color-slate-hover);
+  color: white;
+}
+
+.btnSuccess {
+  background-color: var(--color-emerald);
+  color: white;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.btnSuccess:hover {
+  background-color: var(--color-emerald-hover);
+}
+
+.btnSm {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.7rem;
+  border-radius: 0.5rem;
+}

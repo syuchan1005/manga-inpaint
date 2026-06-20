@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --bg-dark: #030712;
+  --bg-card: rgba(17, 24, 39, 0.45);
+  --bg-card-hover: rgba(17, 24, 39, 0.7);
+  --border-color: rgba(31, 41, 55, 0.8);
+  --border-color-hover: rgba(55, 65, 81, 0.8);
+  --color-rose: #f43f5e;
+  --color-rose-hover: #e11d48;
+  --color-slate: #1e293b;
+  --color-slate-hover: #334155;
+  --color-emerald: #10b981;
+  --color-emerald-hover: #059669;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}
