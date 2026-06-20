@@ -1,7 +1,7 @@
 import * as ort from 'onnxruntime-web/webgpu';
 
 // Configure ONNX Runtime Web WASM paths
-ort.env.wasm.wasmPaths = '/';
+ort.env.wasm.wasmPaths = import.meta.env.BASE_URL;
 
 // Inference result interfaces
 export interface InferenceResult {
@@ -74,8 +74,8 @@ export async function createSession(
   onDownloadProgress?: (progress: DownloadProgress) => void
 ): Promise<{ session: ort.InferenceSession; backend: 'webgpu' | 'wasm' }> {
   const modelUrl = precision === 'fp16'
-    ? '/models/lama-manga-onnx-dynamic-fp16.onnx?v=hybrid_v3'
-    : '/models/lama-manga-onnx-dynamic.onnx';
+    ? `${import.meta.env.BASE_URL}models/lama-manga-onnx-dynamic-fp16.onnx?v=hybrid_v3`
+    : `${import.meta.env.BASE_URL}models/lama-manga-onnx-dynamic.onnx`;
   onProgress?.(`モデルファイルをダウンロード中...`);
 
   // Fetch model with progress

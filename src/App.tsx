@@ -154,7 +154,7 @@ export default function App() {
   // Generate a programmatic anime/manga style illustration as a sample
   const generateMangaSample = () => {
     const img = new Image();
-    img.src = "/manga_sample.png"; // public folder is served at root
+    img.src = import.meta.env.BASE_URL + "manga_sample.png"; // public folder is served at root
     img.onload = () => {
       const canvas = document.createElement("canvas");
       canvas.width = img.naturalWidth;
