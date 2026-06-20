@@ -1,5 +1,7 @@
 # Manga Inpaint (マンガ・インペイント)
 
+🚀 **デモサイト (GitHub Pages):** [https://syuchan1005.github.io/manga-inpaint/](https://syuchan1005.github.io/manga-inpaint/)
+
 Manga Inpaint は、Webブラウザ上で動作するAI搭載のマンガ画像修復（インペイント）アプリケーションです。画像上で修復したい箇所（セリフ、トーン、ゴミ、不要なオブジェクトなど）をブラシでマスクするだけで、周囲の文脈に合わせて自然に画像を補完・修復します。
 
 サーバーへの画像アップロードは一切行わず、**ONNX Runtime Web** を用いてブラウザ側（WebGPU / WASM）で完全にローカル推論を実行するため、プライバシーが保護され、高速に動作します。

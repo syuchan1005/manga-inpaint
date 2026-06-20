@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
         <span>モバイル端末の場合、WebGPUが有効になっていることを確認してください。</span>
       </p>
       <p style={{ marginTop: "1rem", opacity: 0.3, fontSize: "0.6rem" }}>
-        Powered by ONNX Runtime Web WebGPU & LaMa Manga
+        Powered by ONNX Runtime Web WebGPU & LaMa Manga | <a href="https://github.com/syuchan1005/manga-inpaint" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "underline" }}>GitHub</a>
       </p>
     </footer>
   );
